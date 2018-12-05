@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <title>datetime</title>
+
+    <link href="src/css/mobiscroll.animation.css" rel="stylesheet">
+    <link href="src/css/mobiscroll.icons.css" rel="stylesheet">
+    <link href="src/css/mobiscroll.frame.css" rel="stylesheet">
+
+    <link href="src/css/mobiscroll.frame.ios.css" rel="stylesheet">
+    <link href="src/css/mobiscroll.scroller.css" rel="stylesheet">
+
+    <link href="src/css/mobiscroll.scroller.ios.css" rel="stylesheet">
+<style>
+.dw-persp{
+    height: 100% !important;
+}
+.dw-persp .dw.dw-ltr{
+    top: 50%;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+}
+</style>
+    <script src="src/js/jquery.min.js"></script>
+
+    <script src="src/js/mobiscroll.core.js"></script>
+    <script src="src/js/mobiscroll.frame.js"></script>
+    <script src="src/js/mobiscroll.scroller.js"></script>
+
+    <script src="src/js/mobiscroll.util.datetime.js"></script>
+    <script src="src/js/mobiscroll.datetimebase.js"></script>
+    <script src="src/js/mobiscroll.datetime.js"></script>
+
+
+
+    <script>
+        $(function () {
+            $('#demo_datetime').mobiscroll().date({
+                theme: 'ios',
+                display: 'center',
+                dateFormat: 'dd MM',
+                dateOrder: 'dd M',
+            });
+        })
+    </script>
+</head>
+<body>
+
+<input type="text" id="demo_datetime">
+
+</body>
+</html>
