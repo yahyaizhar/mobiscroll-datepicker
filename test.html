@@ -14,16 +14,7 @@
     <link href="src/css/mobiscroll.scroller.css" rel="stylesheet">
 
     <link href="src/css/mobiscroll.scroller.ios.css" rel="stylesheet">
-<style>
-.dw-persp{
-    height: 100% !important;
-}
-.dw-persp .dw.dw-ltr{
-    top: 50%;
-    left: 50% !important;
-    transform: translate(-50%, -50%);
-}
-</style>
+
     <script src="src/js/jquery.min.js"></script>
 
     <script src="src/js/mobiscroll.core.js"></script>
@@ -38,17 +29,21 @@
 
     <script>
         $(function () {
+
             $('#demo_datetime').mobiscroll().date({
                 theme: 'ios',
-                display: 'center',
-                dateFormat: 'dd MM',
+                display: 'modal',
+                dateFormat: 'dd MM yyyy',
                 dateOrder: 'dd M',
+                dayText: 'Select Day',
+                scrollLock: false,
+                dateWheels: 'dd MM yyyy',
             });
         })
     </script>
 </head>
 <body>
-
+asd
 <input type="text" id="demo_datetime">
 
 </body>
